@@ -1,42 +1,36 @@
 body{
-	margin-left: 90px;
-	margin-right: 90px;
 	font-family: 'Open Sans',Helvetica,Arial,sans-serif;
 }
-
 .no-decoration{
 	text-decoration: none;
 }
+#logo{
+	width: 250px;
+}
+ 														/*HEADER*/
 
 .header {
-}
-.header__navigation {
-}
-.header__navigation_links {
-}
-.header__navigation_advice {
-	position: absolute;
-	top:0;
-	width:260px;
-	height:20px;
-	margin-left: 390px;
-	background-color: #FBE7A3;
-	padding: 10px;
-}
-#advice-text{
-	position: absolute;
-	top:5;
-    margin-left: 40px;
-	font-size: 14px;
-    line-height: 1.3;
-    color: #1c1819;
-}
-#advice-image{
-	width:40px;
-	position: absolute;
-	top:0px;
+	width:50%;
+	height:500px;
+	background-color:#FEF4F1;
 }
 
+.navigation-table{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 1.3;
+    color: #B1080E;
+}
+.header__navigation_links{
+	position: absolute;
+	width:500px;
+	height:500px;
+	top:3%;
+	left:22%;
+	margin-right: 30px;
+}
 .header__navigation_account {
 	position: absolute;
 	top: 10px;
@@ -47,6 +41,14 @@ body{
 	font-size: 14px;
     line-height: 1.3;
     color: #1c1819;
+    border: none;
+    padding: 10px;
+    background-color:#B1080E;
+    color:white;
+    border-radius: 5px;
+    position: absolute;
+	left:100px;
+	width:100px;
 }
 .header__navigation_create {
 	position: absolute;
@@ -57,10 +59,7 @@ body{
     padding:10px;
     background: #2a81dd;
 }
-#plus-image{
-	width:20px;
-	border-radius: 5px;
-}
+
 #create-text{
 	position: absolute;
 	top:10px;
@@ -72,11 +71,8 @@ body{
  	position: absolute;
  	top:65px;
  }
-#market-image{
-	width:180px;
-}
-.search-panel__icon {
-}
+
+
 .search-panel__search-form {
 	position: absolute;
 	left:190px;
@@ -444,4 +440,40 @@ h3{
   25%  {color: yellow;}
   50%  {color: blue;}
   100% {color: green;}
+}
+
+																/*FOOTER*/
+td:hover{
+	color:red;
+	cursor: pointer;
+}
+.footer{
+	background-color:#4C5D67;
+	height:350px; 
+	color:white;
+}
+.social-media{
+	margin:20px;
+	position: relative;
+	left:30%;
+	top:5%;
+}
+#footer{
+	position: relative;
+	left:12%;
+}
+td{
+	padding-right: 50px;
+}
+.footer-category{
+	font-size: 1.25rem;
+}
+.white-hr{
+	color:white;
+	width:900px;
+}
+.footer__ending{
+	text-align: center;
+	position: relative;
+	top:5%;
 }
