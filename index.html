@@ -3,177 +3,63 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Бесплатные объявления: доска бесплатных объявлений MARKET.KZ</title>
-	<link rel="icon" sizes="32x32" href="/images/icon.png">
+	<link rel="icon"  href="https://campus.iitu.edu.kz/assets/images/logo.png">
+	<title>IITU Canteen</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="search" type="application/opensearchdescription+xml" title="Маркет.КЗ" href="/opensearch.xml" />
 </head>
 <body>
-
-	<div class="header">
-		<div class="header__navigation">
+    <header>
+		<div class="header">
+			<a href="https://iitu.edu.kz/ru/"class="no-decoration">
+				<img src="images/logo1.png" id="logo"> 
+			</a>
+		</div>
+	</header>
+		<nav>
+			<div class="header__background">
 			<div class="header__navigation_links">
-				<table>
+				<table class="navigation-table">
 					<tr>
 						<td>
-							<a href="https://kolesa.kz/">
-								<img src="images/kolesa.png" alt="Колёса">
+							<a href="https://iitu.edu.kz/ru/" class="navigation-table">
+								IITU
 							</a>
 						</td>
 						<td>
-							<a href="https://krisha.kz/">
-								<img src="images/krisha.png" alt="Колёса">
+							<a href="https://iitu.edu.kz/ru/" class="navigation-table">
+								Events
 							</a>
+						</td>
 						<td>
-						<td>
-							<a href="https://market.kz/">
-								<img src="images/market.png" alt="Колёса">
+							<a href="#footer" class="navigation-table">
+								About Us
 							</a>
 						</td>
 					</tr>
 				</table>
 			</div>
-        <div class="header__navigation_advice">
-        	<a href="https://market.kz/content/vidy-moshennichestva/">
-        			<img src="images/lock.png" id="advice-image">
-        			<span id="advice-text">
-        			Как не стать жертвой мошенника
-        		    </span>
-        	</a>
-        </div>
+		</div>
+        </nav>
         
         <div class="header__navigation_account">
-        	<a href="https://aigerimali.github.io/J/" class="no-decoration">
-        		<span id="account">
-        		<a href="https://aigerimali.github.io/J/">Личный кабинет </a>
-        	    </span>
-        	</a>
-        </div>
-
-        <div class="header__navigation_create">
-        	<a href="https://aigerimali.github.io/add/" class="no-decoration">
-        	<img src="images/plus.png" id="plus-image">
-        	<span id="create-text">
-        	Подать объявление
-        	<span>
+        	<a href="" class="no-decoration">
+        		<button id="account">
+        		Log in
+        	    </button>
         	</a>
         </div>
    		</div>
     </div>
 
-    <div class="search-panel">	
-    	<div class="search-panel__icon">	
-    		<img src="images/market1.png" id="market-image">
-    	</div>
+    <br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br>
 
-    	<div class="search-panel__search-form">
-    	<div class="search-panel__search-form_white">
-    		<div class="search-form__dropdown">
-    			<span onclick="dropdown_search()" class="dropdown_button">
-    				<span id="dropdown-text">
-    					Во всех разделах
-    				</span>
-    				<img src="images/dropdown-symbol.png" id="dropdown-symbol">
-    			</span>
-    			<div class="dropdown-content" id="dropdown-list">
-    				<a class="category_main" onclick="select_category1()">Услуги</a>
-    					<a class="category_child" onclick="select_category_child1()">Строительство и ремонт</a>
-    				<a class="category_main" onclick="select_category2()">Электроника</a>
-    				<a class="category_main" onclick="select_category3()">Для дома и сада</a>
-    				<a class="category_main" onclick="select_category4()">Личные вещи</a>
-    				<a class="category_main" onclick="select_category5()">Для бизнеса</a>
-    				<a class="category_main" onclick="select_category6()">Животные</a>
-    				<a class="category_main" onclick="select_category7()">Детям</a>
-    				<a class="category_main" onclick="select_category8()">Хобби и спорт</a>
-    				<a class="category_main" onclick="select_category9()">Работа</a>
-    				<a class="category_main" onclick="select_category10()">Недвижимость</a>
-    				<a class="category_main" onclick="select_category11()">Транспорт</a>
-    			</div>
-    		</div>
-
-    		<div class="search-form">
-    			<input type="text" name="search"  placeholder="Быстрый поиск" class="search-form">
-    		</div>
-
-    		<div class="search-form__dropdown_region">
-    			<span onclick="dropdown_search_region()" class="dropdown_button">
-    				<img src="images/dropdown-symbol-region.png" id="dropdown-symbol-region">
-    				<span id="dropdown-text-region">
-    					Весь Казахстан
-    				</span>
-    				<img src="images/dropdown-symbol.png" id="dropdown-symbol">
-    			</span>
-    			<input type="text" placeholder="Поиск.." id="dropdown-search-input" onkeyup="dropdown_search_region_filter()">
-    			<div class="dropdown-content-region" id="dropdown-list-region">
-    				<a href="">Весь Казахстан</a>
-    				<a class="region" onclick="select_region1()">Акмолинская область</a>
-    				<a class="hide" onclick="select_city1()">
-	    				Кокшетау
-	    			</a>
-	    			<a class="hide" onclick="select_city2()">
-	    				Нур-Султан
-	    			</a>
-	    			<a class="hide" onclick="select_city3()">
-	    				Атбасар
-	    			</a>
-	    			<a class="hide" onclick="select_city4()">
-	    				Боровое
-	    			</a>
-	    			
-    				<a class="region" onclick="select_region2()">Актюбинская область</a>
-    				<a class="hide" onclick="select_city5()">
-	    				Актобе
-	    			</a>
-	    			<div class="hide" onclick="select_city6()">
-	    				Мартук
-	    			</div>
-    				<a class="region">Алматинская область</a>
-    				<div class="hide">
-    					Алматы<br>
-						Талдыкорган<br>
-						Ушарал<br>
-						Абай (Алматинская область)<br>
-						Ават<br>
-						Азат<br>
-    				</div>
-    				<a class="region" onclick="select_region3()">Атырауская область</a>
-    				<div class="hide">
-    					Атырау<br>
-						Аккыстау<br>
-						Ганюшкино<br>
-						Доссор<br>
-						Индер<br>
-    				</div>
-    				<a class="region" onclick="select_region4()">Восточно-Казахстанская область</a>
-    				<div class="hide">
-    					Семей<br>
-						Усть-Каменогорск<br>
-						Акжар<br>
-						Аксуат<br>
-						Актогай (ВКО)<br>
-						Алтай<br>
-						Асу-Булак<br>
-						Ауэзов<br>
-						
-    				</div>
-    				<a class="region" onclick="select_region5()">Жамбылская область</a>
-    				<a class="region" onclick="select_region6()">Западно-Казахстанская область</a>
-    				<a class="region" onclick="select_region7()">Карагандинская область</a>
-    				<a class="region" onclick="select_region8()">Костанайская область</a>
-    				<a class="region" onclick="select_region9()">Кызылординская область</a>
-    				<a class="region" onclick="select_region10()">Мангистауская область</a>
-    				<a class="region" onclick="select_region11()">Павлодарская область</a>
-    				<a class="region" onclick="select_region12()">Северо-Казахстанская область</a>
-    				<a class="region" onclick="select_region13()">Туркестанская область</a>
-    			</div>
-    		</div>
-    		<div class="search_button">
-    			<button class="search_button" id="search_button-text" onclick="downloading()">
-    				Найти
-    			</button>
-    		</div>
-        </div>	
-    	</div>
+    
 
     	<div class="search-panel__categories">
 
@@ -181,7 +67,7 @@
     	<div class="category" onclick="show_description()">
          <img src="images/Услуги.png" class="categories" alt="Услуги">
          <figcaption class="categories_caption">
-         	Услуги
+         	IITU
          </figcaption>
     	</div>
     	<div class="hide-description">
@@ -252,126 +138,6 @@
     				</tr>
     			</table>
     	</div>
-
-    	<div class="category" onclick="show_description2()">
-    	<img src="images/Электроника.png" class="categories" alt="Электроника">
-         <figcaption class="categories_caption">
-         	Электроника
-         </figcaption>
-    	</div>
-    	<div class="hide-description">
-    		<span class="hide-description_title" id="hide-description2">
-    			<a href="https://market.kz/uslugi/" class="no-decoration">
-    			Все объявления в категории Электроника
-    			</a>
-    		</span>
-    			<table class="description_table">
-    				<tr>
-    					<td>
-    						Компьютеры
-    					</td>
-    					<td>
-    						Фото и видеокамеры
-    					</td>
-    					<td>
-    						Телефоны и гаджеты
-    					</td>
-    					<td>
-    						ТВ и видео
-    					</td>
-    				</tr>
-
-    				<tr>
-    					<td>
-    						Аудиотехника
-    					</td>
-    					<td>
-    						Игровые приставки
-    					</td>
-    					<td>
-    						Индивидуальный уход
-    					</td>
-    					<td>
-    						Климатическая техника
-    					</td>
-    				</tr>
-
-    				<tr>
-    					<td>
-    						Техника для кухни
-    					</td>
-    					<td>
-    						Техника для дома
-    					</td>
-    					<td>
-    						Прочая техника
-    					</td>
-    					<td>
-    						Техника
-    					</td>
-    				</tr>
-
-    				
-    			</table>
-    	</div>
-
-
-  		<div>
-    	<img src="images/Для-дома-и-сада.png" class="categories" alt="Для-дома-и-сада">
-         <figcaption class="categories_caption">
-         	Для дома и сада
-         </figcaption>
-    	</div>
-
-    	<div>
-    	<img src="images/Личные-вещи.png" class="categories" alt="Личные-вещи">
-         <figcaption class="categories_caption">
-         	Личные вещи
-         </figcaption>
-    	</div>
-
-    	<div>
-    	<img src="images/Для-бизнеса.png" class="categories" alt="Для бизнеса">
-         <figcaption class="categories_caption">
-         	Для бизнеса
-         </figcaption>
-    	</div>
-
-        <div>
-		<img src="images/Животные.png" class="categories" alt="Животные">
-         <figcaption class="categories_caption">
-         	Животные
-         </figcaption>
-    	</div>
-
-    	<div>
-		<img src="images/Детям.png" class="categories" alt="Детям">
-         <figcaption class="categories_caption">
-         	Детям
-         </figcaption>
-    	</div>
-
-    	<div>
-		<img src="images/Хобби-и-спорт.png" class="categories" alt="Хобби-и-спорт">
-         <figcaption class="categories_caption">
-         	Хобби и спорт
-         </figcaption>
-    	</div>
-
-    	<div>
-		<img src="images/Работа.png" class="categories" alt="Работа">
-         <figcaption class="categories_caption">
-         	Работа
-         </figcaption>
-    	</div>
-
-    	<div>
-		<img src="images/Недвижимость.png" class="categories" alt="Недвижимость">
-         <figcaption class="categories_caption">
-         	Недвижимость
-         </figcaption>
-    	</div>
-
     	<div>
 		<img src="images/Транспорт.png" class="categories" alt="Транспорт">
          <figcaption class="categories_caption">
@@ -576,10 +342,100 @@
 			  	</figcaption>
 			  </div>
     	</main>
-    <footer>
-    	<img src="images/ftr.png" class="ftr">
-    	<img src="images/ftr2.png" class="ftr">
-    </footer>   
+<footer>
+	<div class="footer">
+		<div class="footer__logos">
+			<a href="https://www.facebook.com/iitukz/">
+			<img src="images/facebook.png"  class="social-media">
+			</a>
+			<a href="https://vk.com/iitukz">
+			<img src="images/vk.png" class="social-media">
+			</a>
+			<a href="https://www.instagram.com/iitu_kz/">
+			<img src="images/instagram.png" class="social-media">
+			</a>
+			<a href="https://t.me/iitunews">
+			<img src="images/telegram.png" class="social-media">
+			</a>
+			<a href="https://www.youtube.com/user/IITUAlmaty">
+			<img src="images/youtube.png" class="social-media">
+			</a>
+		</div>
+		<hr class="white-hr">
+		<div class="footer__links">
+		<table id="footer">
+			<tr>
+				<td class="footer-category">
+					Contacts
+				</td>
+				<td class="footer-category">
+					About University
+				</td>
+				<td class="footer-category">
+					For Students
+				</td>
+				<td class="footer-category">
+					Cooperation
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/contacts1.png">
+					info@iitu.kz
+				</td>
+				<td>
+					The beginning of the work of the canteen
+				</td>
+				<td>
+					DL
+				</td>
+				<td>
+					Partners
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/contacts2.png">
+					8 (727) 320-00-00
+				</td>
+				<td>
+					Mission and Strategy
+				</td>
+				<td>
+					Trust Box
+				</td>
+				<td>
+					Our managers
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/contacts3.png">
+					Manas Street 34/1 0 floor
+				</td>
+				<td>
+					3D Tour
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/contacts4.png">
+					All contacts
+				</td>
+				<td>
+					COVID-19
+				</td>
+			</tr>
+		</table>
+		<hr class="white-hr">
+		</div>
+			<div class="footer__ending">
+		Copyright All Rights Reserved 2020, International IT University
+		<br>
+		Designed by Abubakirova Manshuk and Aliyeva Aigerim
+	</div>
+	</div>
+</footer>  
 
     <script src="app.js">
     	
