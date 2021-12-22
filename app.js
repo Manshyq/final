@@ -1,17 +1,13 @@
-function dropdown_search(){
-    		document.getElementById("dropdown-list").classList.toggle("show");
-    	}
-
-    	function dropdown_search_region() {
-    	document.getElementById("dropdown-list-region").classList.toggle("show");
+function dropdown_search_promotion() {
+    	document.getElementById("dropdown-list-promotion").classList.toggle("show");
 		document.getElementById("dropdown-search-input").classList.toggle("show");
 		}
 
-		function dropdown_search_region_filter() {
+		function dropdown_search_promotion_filter() {
 		  var input, filter, ul, li, a, i;
 		  input = document.getElementById("dropdown-search-input");
 		  filter = input.value.toUpperCase();
-		  div = document.getElementById("dropdown-list-region");
+		  div = document.getElementById("dropdown-list-promotion");
 		  a = div.getElementsByTagName("a");
 		  for (i = 0; i < a.length; i++) {
 		    txtValue = a[i].textContent || a[i].innerText;
@@ -23,66 +19,73 @@ function dropdown_search(){
 		  }
 		}
 
-		function select_category1(){
-			document.getElementById("dropdown-text").innerHTML='Услуги';
-		}
-		function select_category_child1(){
-			document.getElementById("dropdown-text").innerHTML='Строительство и ремонт';
-		}
+function select_promotion1(){
+	document.getElementById("dropdown-text-promotion").innerHTML='IITU Coffee';
+	document.getElementById("promotion-category").innerHTML='IITU Coffee';
+	document.getElementById("promotion1").src='images/drink1.jpeg';
+	document.getElementById("promotion2").src='images/drink2.jpeg';
+	document.getElementById("promotion3").src='images/drink3.jpeg';
+	document.getElementById("promotion4").src='images/drink4.jpeg';
+
+}
+
+function select_promotion2(){
+	document.getElementById("dropdown-text-promotion").innerHTML='Dish of the day';
+	document.getElementById("promotion-category").innerHTML='Dish of the day';
+	document.getElementById("promotion1").src='images/dish1.jpeg';
+	document.getElementById("promotion2").src='images/dish2.jpeg';
+	document.getElementById("promotion3").src='images/dish3.jpeg';
+	document.getElementById("promotion4").src='images/dish4.jpeg';
+
+}
+function select_promotion3(){
+	document.getElementById("dropdown-text-promotion").innerHTML='Dessert of the day';
+	document.getElementById("promotion-category").innerHTML='Dessert of the day';
+	document.getElementById("promotion1").src='images/dessert1.jpeg';
+	document.getElementById("promotion2").src='images/dessert2.jpeg';
+	document.getElementById("promotion3").src='images/dessert3.jpeg';
+	document.getElementById("promotion4").src='images/dessert4.jpeg';
+
+}
 
 
 
-		function select_region1(){
-			document.getElementById("dropdown-text-region").innerHTML='Акмолинская область';
-			document.getElementById("region-name").innerHTML='Акмолинской область';
-		}
-		function select_region2(){
-			document.getElementById("dropdown-text-region").innerHTML='Актюбинская область';
-			document.getElementById("region-name").innerHTML='Актюбинской область';
-		}
-		function select_region3(){
-			document.getElementById("dropdown-text-region").innerHTML='Атырауская область';
-			document.getElementById("region-name").innerHTML='Атырауской область';
-		}
-		function select_region4(){
-			document.getElementById("dropdown-text-region").innerHTML='Восточно-Казахстанская область';
-			document.getElementById("region-name").innerHTML='Восточно-Казахстанской область';
-		}
-		function select_region5(){
-			document.getElementById("dropdown-text-region").innerHTML='Жамбылская область';
-			document.getElementById("region-name").innerHTML='Жамбылской область';
-		}
-		function select_city1(){
-			document.getElementById("dropdown-text-region").innerHTML='Кокшетау';
-			document.getElementById("region-name").innerHTML='Кокшетау';
-		}
-		function select_city2(){
-			document.getElementById("dropdown-text-region").innerHTML='Нур-Султан';
-			document.getElementById("region-name").innerHTML='Нур-Султане';
-		}
-		function select_city3(){
-			document.getElementById("dropdown-text-region").innerHTML='Атбасар';
-			document.getElementById("region-name").innerHTML='Атбасаре';
-		}
-		function select_city4(){
-			document.getElementById("dropdown-text-region").innerHTML='Боровое';
-			document.getElementById("region-name").innerHTML='Боровом';
-		}
-		function select_city5(){
-			document.getElementById("dropdown-text-region").innerHTML='Актобе';
-			document.getElementById("region-name").innerHTML='Актобе';
-		}
-		function select_city6(){
-			document.getElementById("dropdown-text-region").innerHTML='Мартук';
-			document.getElementById("region-name").innerHTML='Мартуке';
-		}
 
 
-		function downloading(){
-			document.getElementById("search_button-text").style.backgroundImage="url('https://c.tenor.com/wfEN4Vd_GYsAAAAC/loading.gif')";
+function dropdown_symbol(){
+	document.getElementById("dropdown-symbol1").innerHTML='⌃';
+}
+
+function dropdown_search(){
+    		document.getElementById("dropdown-list").classList.toggle("show");
+    	}
+
+    	function dropdown_search_promotion() {
+    	document.getElementById("dropdown-list-promotion").classList.toggle("show");
+		document.getElementById("dropdown-search-input").classList.toggle("show");
 		}
 
+		function dropdown_search_promotion_filter() {
+		  var input, filter, ul, li, a, i;
+		  input = document.getElementById("dropdown-search-input");
+		  filter = input.value.toUpperCase();
+		  div = document.getElementById("dropdown-list-promotion");
+		  a = div.getElementsByTagName("a");
+		  for (i = 0; i < a.length; i++) {
+		    txtValue = a[i].textContent || a[i].innerText;
+		    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+		      a[i].style.display = "";
+		    } else {
+		      a[i].style.display = "none";
+		    }
+		  }
+		}
 		function show_description(){
+			document.getElementById("hide-description1").classList.toggle("show");
+		}
+
+
+		function show_description1(){
 			document.getElementById("hide-description1").classList.toggle("show");
 		}
 		function show_description2(){
@@ -96,11 +99,14 @@ function dropdown_search(){
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
-    btnText.innerHTML = "Показать ещё";
+    btnText.innerHTML = "Show more";
     moreText.style.display = "none";
   } else {
     dots.style.display = "none";
-    btnText.innerHTML = "Скрыть";
+    btnText.innerHTML = "Hide";
     moreText.style.display = "inline";
   }
 }
+
+
+															/*FOOTER*/
