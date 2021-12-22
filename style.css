@@ -4,38 +4,44 @@ body{
 .no-decoration{
 	text-decoration: none;
 }
-#logo{
-	width: 250px;
-}
+
  														/*HEADER*/
 
 .header {
 	width:50%;
 	height:500px;
-	background-color:#FEF4F1;
+	background-color:#ECFFDC;
 }
-
+#logo{
+	position: relative;
+	left:3%;
+	top:3%;
+	width: 80px;
+	border-radius: 100%;
+}
 .navigation-table{
     color: red;
     text-decoration: none;
     font-weight: bold;
     font-size: 17px;
     line-height: 1.3;
-    color: #B1080E;
+    color: #8A9A5B;
 }
 .header__navigation_links{
 	position: absolute;
 	width:500px;
 	height:500px;
 	top:3%;
-	left:22%;
+	left:10%;
 	margin-right: 30px;
 }
 .header__navigation_account {
 	position: absolute;
-	top: 10px;
-	right:350px;
-	margin-left: 40px;
+	top:0%;
+	left:50%;
+	width:50%;
+	height: 500px;
+	background:url('images/main.jpeg');
 }
 #account{
 	font-size: 14px;
@@ -43,30 +49,50 @@ body{
     color: #1c1819;
     border: none;
     padding: 10px;
-    background-color:#B1080E;
+    background-color:#8A9A5B;
     color:white;
     border-radius: 5px;
     position: absolute;
-	left:100px;
+    top:10px;
+	right:10px;
 	width:100px;
 }
-.header__navigation_create {
+.header__information{
 	position: absolute;
-	top:0px;
-	right:90px;
-	width: 176px;
-    height: 20px;
-    padding:10px;
-    background: #2a81dd;
+	left:10%;
+	top:20%;
+	width:350px;
 }
+.header__information_big-text{
+    font-family: ;
+    font-size: 25px;
+    font-weight:bold;
+    color:#8A9A5B;
+}
+.header__information_small-text{
 
-#create-text{
-	position: absolute;
-	top:10px;
-	margin-left:5px;
+}
+#our-menu{
+	width:120px;
+	height:40px;
+	border:none;
+	border-radius: 25px;
+	background: #8A9A5B;
 	color:white;
+	font-size: 14px;
+	font-weight: bold;
+	margin-right: 3%;
 }
-
+#book-table{
+	width:120px;
+	height:40px;
+	border:none;
+	border-radius: 25px;
+	background: #8A9A5B;
+	color:white;
+	font-size: 14px;
+	font-weight: bold;
+}
  .search-panel{
  	position: absolute;
  	top:65px;
