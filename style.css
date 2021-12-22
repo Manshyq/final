@@ -4,7 +4,7 @@ body{
 .no-decoration{
 	text-decoration: none;
 }
-@media screen and (min-width: 576px){
+@media screen and (max-width: 576px){
 	.footer{
 		width:100vw;
 		justify-self:center;
