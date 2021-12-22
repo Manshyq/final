@@ -5,13 +5,13 @@ body{
 	text-decoration: none;
 }
 @media screen and (min-width: 576px){
-	.header{
-		width:348px;
+	.footer{
+		width:100vw;
 		justify-self:center;
 	}
 }
 @media screen and (min-width:1024px){
-	.header{
+	.footer{
 		height:100vh;
 		overflow: hidden;;
 	} 
