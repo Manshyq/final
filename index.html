@@ -14,7 +14,7 @@
 			<a href="https://iitu.edu.kz/ru/"class="no-decoration">
 				<img src="images/canteen-logo.jpeg" id="logo"> 
 			</a>
-		</div>	
+			
 
 		<div class="header__information">
 			<div class="header__information_big-text">
@@ -32,9 +32,10 @@
 				Book a table
 			</button>
 		</div>
+		</div>
 	</header>
 		<nav>
-			<div class="header__navigation_links">
+			<div class="navigation_links">
 				<table class="navigation-table">
 					<tr>
 						<td>
@@ -43,8 +44,8 @@
 							</a>
 						</td>
 						<td>
-							<a href="https://iitu.edu.kz/ru/" class="navigation-table">
-								Events
+							<a href="#promotion-category" class="navigation-table">
+								Promotions
 							</a>
 						</td>
 						<td>
@@ -56,306 +57,87 @@
 				</table>
 			</div>
         </nav>
-        
-        <div class="header__navigation_account">
+
+        <div class="navigation_account">
+
         	<a href="" class="no-decoration">
-        		<button id="account">
+        		<button id="sign-up">
+        		Sign up
+        	    </button>
+        	</a>
+        
+        	<a href="" class="no-decoration">
+        		<button id="log-in">
         		Log in
         	    </button>
         	</a>
         </div>
-   		</div>
-    </div>
+   
 
+        <main>
+        	<!--SEARCH PANEL-->
+   <div class="search-panel">
+    	<div class="search-panel__search-form">
+    		<div class="search-panel__search-form_white">
+    			<div class="search-form">
+    			<input type="text" name="search"  placeholder="Fast search" class="search-form">
+    			</div>
+    				<div class="search-form__dropdown_promotion">
+    					<span onclick="dropdown_search_promotion()" class="dropdown_button">
+		    				<span id="dropdown-text-promotion">
+		    					Promotions
+		    				</span>
+	    				</span>
+
+		    			<input type="text" placeholder="Search.." id="dropdown-search-input" onkeyup="dropdown_search_promotion_filter()">
+		    			<div class="dropdown-content-promotion" id="dropdown-list-promotion">
+		    				<a class="region" onclick="select_promotion1()">Coffee</a>
+		    				<a class="region" onclick="select_promotion2()">Dish of the day</a>
+		    				<a class="region" onclick="select_promotion3()">Desert of the day</a>
+		    			</div>
+    				</div>
+        	</div>	
+    	</div>
+    </div>
     <br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
     <br>
+        	<h3>
+    			New Promotions at <span id="promotion-category">IITU Cofee</span>
+    		</h3>
+    		<div class="grid-container">
+    			<div class="category" onclick="show_description1()">
+    			<div class="grid-item" id="promotion-1">
+    				<img src="images/drink1.jpeg" id="promotion1" class="promotion-image">
+    			</div>
+    		    </div>
+    			<div class="grid-item">
+    				<img src="images/drink2.jpeg" id="promotion2" class="promotion-image">
+    			</div>
+    			<div class="grid-item">
+    				<img src="images/drink3.jpeg" id="promotion3" class="promotion-image">
+    			</div>
+    		</div>
+		    	</div>
+		    	<div class="hide-description">
+			    			Latte Makkiato
+			    	</div>
+        </main>
 
     
 
-    	<div class="search-panel__categories">
-
-    	<div class="flex-container">
-    	<div class="category" onclick="show_description()">
-         <img src="images/Услуги.png" class="categories" alt="Услуги">
-         <figcaption class="categories_caption">
-         	IITU
-         </figcaption>
-    	</div>
-    	<div class="hide-description">
-    		<span class="hide-description_title" id="hide-description1">
-    			<a href="https://market.kz/uslugi/" class="no-decoration">
-    			Все объявления в категории Услуги
-    			</a>
-    		</span>
-    			<table class="description_table">
-    				<tr>
-    					<td>
-    						Строительство и ремонт
-    					</td>
-    					<td>
-    						Образование, курсы
-    					</td>
-    					<td>
-    						Ремонт и обслуживание техники
-    					</td>
-    					<td>
-    						Прокат товаров
-    					</td>
-    				</tr>
-
-    				<tr>
-    					<td>
-    						Красота и здоровье
-    					</td>
-    					<td>
-    						Интернет и компьютеры
-    					</td>
-    					<td>
-    						Перевозки / Автосервис
-    					</td>
-    					<td>
-    						Деловые услуги
-    					</td>
-    				</tr>
-
-    				<tr>
-    					<td>
-    						Уборка
-    					</td>
-    					<td>
-    						Охрана / Безопасность
-    					</td>
-    					<td>
-    						Няни / сиделки
-    					</td>
-    					<td>
-    						Пошив одежды
-    					</td>
-    				</tr>
-
-    				<tr>
-    					<td>
-    						Праздники и мероприятия
-    					</td>
-    					<td>
-    						Фото и видео-съёмка
-    					</td>
-    					<td>
-    						Другие услуги
-    					</td>
-    					<td>
-    						
-    					</td>
-    				</tr>
-    			</table>
-    	</div>
-    	<div>
-		<img src="images/Транспорт.png" class="categories" alt="Транспорт">
-         <figcaption class="categories_caption">
-         	Транспорт
-         </figcaption>
-    	</div>
-    	</div>	
-
-    	<main>
-    		<div id="sticky">
-					<img src="images/QR.png" id="QR_image">
-			</div>
-					<button id="hide_QR">Скрыть</button>
-				
-    		<h3>
-    			Новые объявления в <span id="region-name">Алматинской области</span>
-    		</h3>
-
-    		<div class="grid-container">
-			  <div class="grid-item">
-			  	<img src="images/1.png" class="ad_image">
-			  	<figcaption>
-			  		<span class="price">
- 						75 000 ₸
-			  		</span>
-			  		<br>
-			  			<a href="https://market.kz/a/fatbike-velosiped-forward-bizon-26-2019-fetbayk-fetbayk-106415404/" class="ad_name no-decoration">
-			  			Fatbike Велосипед Forward Bizon 26 2019 / Фэтбайк / Фетбайк
-			  			</a>
-			  	</figcaption>
-			  </div>
-			  <div class="grid-item">
-			  	<img src="images/2.png" class="ad_image">
-			  	<figcaption>
-			  		<span class="price">
- 						1500 ₸
-			  		</span>
-			  		<br>
-			  			<a href="https://market.kz/a/tufli-lodochka-106595975/" class="ad_name no-decoration">
-			  			Туфли лодочка
-			  			</a>
-			  	</figcaption>
-			  </div>
-			  <div class="grid-item">
-			  	<img src="images/3.png" class="ad_image">
-			  	<figcaption>
-			  		<span class="price">
- 						25 000 ₸
-			  		</span>
-			  		<br>
-			  			<a href="https://market.kz/a/krovat-106651134/" class="ad_name no-decoration">
-			  			Продам кровать
-			  			</a>
-			  	</figcaption>
-			  </div>  
-			  <div class="grid-item">
-			  	<img src="images/4.png" class="ad_image">
-			  	<figcaption>
-			  		<span class="price">
- 						75 000 ₸
-			  		</span>
-			  		<br>
-			  		<a href="https://market.kz/a/prodaetsya-dva-barana-106696293/" class="ad_name no-decoration">
-			  			Продается два барана 
-			  			</a>
-			  	</figcaption>
-			  </div><div class="grid-item">
-			  	<img src="images/5.png" class="ad_image">
-			  	<figcaption>
-			  		<span class="price">
- 						5 000 ₸
-			  		</span>
-			  		<br>
-			  		<a href="https://market.kz/a/koshkin-dom-106714964/" class="ad_name no-decoration">
-			  			Кошкин дом
-			  			</a>
-			  	</figcaption>
-			  </div><div class="grid-item">
-			  	<img src="images/6.png" class="ad_image">
-			  	<figcaption>
-			  		<span class="price">
- 						2 000 ₸
-			  		</span>
-			  		<br>
-			  		<a href="https://market.kz/a/vana-tazik-kastryulya-106714707/" class="ad_name no-decoration">
-			  			Вана тазик кастрюля
-			  			</a>
-			  	</figcaption>
-			  </div><div class="grid-item">
-			  	<img src="images/7.png" class="ad_image">
-			  	<figcaption>
-			  		<span class="price">
- 						275 000 ₸
-			  		</span>
-			  		<br>
-			  		<a href="https://market.kz/a/schenki-nemetskogo-tsvergshpitsa-106615331/" class="ad_name no-decoration">
-			  			Щенки немецкого цвергшпица
-			  			</a>
-			  	</figcaption>
-			  </div><div class="grid-item">
-			  	<img src="images/8.png" class="ad_image">
-			  	<figcaption>
-			  		<span class="price">
- 						455 000 ₸
-			  		</span>
-			  		<br>
-			  		<a href="https://market.kz/a/telefon-106720295/" class="ad_name no-decoration">
-			  			iPhone 12 Pro Max 256 gb
-			  			</a>
-			  	</figcaption>
-			  </div><div class="grid-item">
-			  	<img src="images/9.png" class="ad_image">
-			  	<figcaption>
-			  		<span class="price">
- 						3 990 ₸
-			  		</span>
-			  		<br>
-			  			<a href="https://market.kz/a/proda-tsya-kniga-habiba-v-horoshim-sostoyanie-106720289/" class="ad_name no-decoration">
-			  			Продаётся книга Хабиба!В хорошим состояние!
-			  			</a>
-			  		<br>
-			  	</figcaption>
-			  </div>
-			</div>	
-
+    	
+    		
 			<span id="dots">...</span>
 			<button onclick="show_more()" id="show-more">
-				Показать ещё
+				Show more
 			</button>	
 
 
-			<div class="grid-container" id="more">
+			<div class="grid-container1" id="more">
 			  <div class="grid-item">
-			  	<img src="images/1.png" class="ad_image">
-			  	<figcaption>
-			  		<span class="price">
- 						75 000 ₸
-			  		</span>
-			  		<br>
-			  			<a href="https://market.kz/a/fatbike-velosiped-forward-bizon-26-2019-fetbayk-fetbayk-106415404/" class="ad_name no-decoration">
-			  			Fatbike Велосипед Forward Bizon 26 2019 / Фэтбайк / Фетбайк
-			  			</a>
-			  	</figcaption>
+			  	<img src="images/drink4.jpeg" id="promotion4" class="promotion-image">
 			  </div>
-			  <div class="grid-item">
-			  	<img src="images/2.png" class="ad_image">
-			  	<figcaption>
-			  		<span class="price">
- 						1500 ₸
-			  		</span>
-			  		<br>
-			  			<a href="https://market.kz/a/tufli-lodochka-106595975/" class="ad_name no-decoration">
-			  			Туфли лодочка
-			  			</a>
-			  	</figcaption>
-			  </div>
-			  <div class="grid-item">
-			  	<img src="images/3.png" class="ad_image">
-			  	<figcaption>
-			  		<span class="price">
- 						25 000 ₸
-			  		</span>
-			  		<br>
-			  			<a href="https://market.kz/a/krovat-106651134/" class="ad_name no-decoration">
-			  			Продам кровать
-			  			</a>
-			  	</figcaption>
-			  </div>  
-			  <div class="grid-item">
-			  	<img src="images/3.png" class="ad_image">
-			  	<figcaption>
-			  		<span class="price">
- 						25 000 ₸
-			  		</span>
-			  		<br>
-			  			<a href="https://market.kz/a/krovat-106651134/" class="ad_name no-decoration">
-			  			Продам кровать
-			  			</a>
-			  	</figcaption>
-			  </div>  
-			  <div class="grid-item">
-			  	<img src="images/4.png" class="ad_image">
-			  	<figcaption>
-			  		<span class="price">
- 						75 000 ₸
-			  		</span>
-			  		<br>
-			  		<a href="https://market.kz/a/prodaetsya-dva-barana-106696293/" class="ad_name no-decoration">
-			  			Продается два барана 
-			  			</a>
-			  	</figcaption>
-			  </div><div class="grid-item">
-			  	<img src="images/5.png" class="ad_image">
-			  	<figcaption>
-			  		<span class="price">
- 						5 000 ₸
-			  		</span>
-			  		<br>
-			  		<a href="https://market.kz/a/koshkin-dom-106714964/" class="ad_name no-decoration">
-			  			Кошкин дом
-			  			</a>
-			  	</figcaption>
-			  </div>
+			</div>
     	</main>
 <footer>
 	<div class="footer">
@@ -452,14 +234,12 @@
 	</div>
 </footer>  
 
-    <script src="app.js">
-    	
-    </script>
+    <script src="app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script> 
 	$(document).ready(function(){
 	  $("#hide_QR").click(function(){
-	    $("#QR_image").animate({
+	    $("#QR").animate({
 	      height: 'toggle'
 	    });
 	  });
